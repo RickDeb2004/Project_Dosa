@@ -52,7 +52,7 @@ const Button = styled.button`
   gap: 5px;
   font-size: ${(props) => props.theme.fontSizes.medium};
   background: ${(props) => props.bg};
-  color: white;
+  color: #ffffff; /* Ensure high contrast */
   &:hover {
     opacity: 0.9;
   }
@@ -83,7 +83,8 @@ const Layout = () => {
   return (
     <>
       <Header>
-        <h1>SQL Query Executor</h1>
+      <h1>SQL Query Executor</h1>  
+      <h2>Run and manage SQL queries efficiently</h2>  
       </Header>
       <Container>
         <Sidebar>
@@ -99,14 +100,14 @@ const Layout = () => {
             <QueryEditor />
           </Suspense>
           <ButtonGroup>
-            <Button bg="#4A90E2" onClick={runQuery}>
-              <FaPlay /> Run
+            <Button bg="#0A66C2" onClick={runQuery}>
+              <FaPlay aria-hidden="true" /> <span>Run</span>
             </Button>
-            <Button bg="#7B61FF" onClick={handleSave}>
-              <FaSave /> Save
+            <Button bg="#5A3EC8" onClick={handleSave}>
+              <FaSave aria-hidden="true" /> <span>Save</span>
             </Button>
-            <Button bg="#FF4D4F" onClick={clearQuery}>
-              <FaTrash /> Clear
+            <Button bg="#D32F2F" onClick={clearQuery}>
+              <FaTrash aria-hidden="true" /> <span>Clear</span>
             </Button>
           </ButtonGroup>
           <Suspense fallback={<div>Loading Result Table...</div>}>
