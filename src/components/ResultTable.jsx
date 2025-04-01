@@ -110,6 +110,7 @@ const ResultTable = () => {
           onClick={() => handleExport(result)}
           style={{ border: "none", background: "none", cursor: "pointer" }}
           disabled={result.length === 0} // Disable export button when empty
+          aria-label="Download CSV"
         >
           <FiDownload
             size={18}
