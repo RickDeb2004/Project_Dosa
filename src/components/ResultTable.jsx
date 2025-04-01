@@ -113,6 +113,7 @@ const ResultTable = () => {
           <FiDownload
             size={18}
             color={result.length > 0 ? "#1A1AC9" : "#CCC"}
+            aria-hidden="true"
           />
         </button>
       </div>

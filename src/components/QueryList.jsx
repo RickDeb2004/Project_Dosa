@@ -105,7 +105,7 @@ const QueryList = () => {
       {filteredQueries.map((query) => (
         <QueryItem key={query.id} onClick={() => setCurrentQuery(query.query)}>
           <span>{query.query}</span>
-          <DeleteIcon onClick={(e) => handleDelete(query.id, e)} />
+          <DeleteIcon onClick={(e) => handleDelete(query.id, e)} aria-hidden="true"/>
         </QueryItem>
       ))}
     </ListWrapper>

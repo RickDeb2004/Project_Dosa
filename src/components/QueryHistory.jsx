@@ -104,7 +104,7 @@ const QueryHistory = () => {
       {filteredHistory.map((query, index) => (
         <HistoryItem key={index} onClick={() => setCurrentQuery(query)}>
           <span>{query}</span>
-          <DeleteIcon onClick={(e) => handleDelete(index, e)} />
+          <DeleteIcon onClick={(e) => handleDelete(index, e)} aria-hidden="true" />
         </HistoryItem>
       ))}
     </HistoryWrapper>
