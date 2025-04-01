@@ -35,6 +35,10 @@ const QueryEditor = () => {
             minimap: { enabled: false },
             scrollBeyondLastLine: false,
             fontSize: 14,
+            readOnly: false,
+          }}
+          onPaste={(e) => {
+            e.stopPropagation(); // Allow paste events
           }}
         />
       </Suspense>
