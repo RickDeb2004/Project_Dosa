@@ -100,13 +100,13 @@ const Layout = () => {
             <QueryEditor />
           </Suspense>
           <ButtonGroup>
-            <Button bg="#0A66C2" onClick={runQuery}>
+            <Button bg="#0A66C2" onClick={runQuery} aria-label="Run Query">
               <FaPlay aria-hidden="true" /> <span>Run</span>
             </Button>
-            <Button bg="#5A3EC8" onClick={handleSave}>
+            <Button bg="#5A3EC8" onClick={handleSave} aria-label="Save Query">
               <FaSave aria-hidden="true" /> <span>Save</span>
             </Button>
-            <Button bg="#D32F2F" onClick={clearQuery}>
+            <Button bg="#D32F2F" onClick={clearQuery} aria-label="Clear Query">
               <FaTrash aria-hidden="true" /> <span>Clear</span>
             </Button>
           </ButtonGroup>

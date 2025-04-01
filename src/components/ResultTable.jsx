@@ -13,10 +13,11 @@ const TableWrapper = styled.div`
 `;
 
 const EmptyMessage = styled.div`
-  text-align: center;
-  padding: 20px;
-  color: #888;
+  color: #333; /* Darker text for better contrast */
   font-size: 16px;
+  font-weight: 600;
+  padding: 10px;
+  text-align: center;
 `;
 
 const customStyles = {
